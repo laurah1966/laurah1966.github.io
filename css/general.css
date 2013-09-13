@@ -1,0 +1,102 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	background-color: #ABE2DF;
+	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+	background-size: 50px 50px;
+	font-family: 'News Cycle', sans-serif, helvetica;
+
+}
+
+article {
+	background-color:#FFF;
+	box-shadow: 5px #333;
+	border-radius:1em;
+	padding:0.5em;
+	overflow:hidden;
+}
+
+h1{
+	color:#999;
+	padding-left: 1.5rem;
+
+}
+
+.profile {
+	color:#333;
+	width: 1.5rem;
+	display:inline-block;
+}
+
+
+p {
+	font-size:1em;
+	color: #666;
+	
+}
+
+.intro {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 1.4em -0.5em;
+	padding: 0.5em;
+}
+
+.flex-img {
+	width:100%;	
+}
+
+
+dl {
+	overflow:hidden;
+	/* clearfix reminds the element to wrap aroud all of its floated children */
+}
+
+figure {
+	margin:0 -0.5em;
+}
+
+
+@media only screen and (min-width: 25em) {
+	html{
+		font-size:1em;
+		}
+
+	
+}
+
+@media only screen and (min-width: 37em) {
+	figure {
+		float:left;
+		width: 40%;
+		margin: 0;
+	}
+	
+	.characteristics {
+		float: right;
+		width: 55%;
+		margin-top: -2em;
+	}
+	
+	.intro {
+		border-top: 0;
+	}
+	
+	p { 
+	border-bottom: 1px solid #CCC;
+	}
+	
+}
+
+@media only screen and (min-width: 55em) {
+	
+	html{
+		font-size:2em;
+		}
+
+	
+}
