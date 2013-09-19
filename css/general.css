@@ -60,6 +60,26 @@ figure {
 	margin:0 -0.5em;
 }
 
+#thumbwrap {
+	position:relative;
+	margin:0px auto;
+	width:800px; height:800px;
+}
+.thumb img { 
+	border:1px solid #FFF;
+	margin:5px;
+	float:left;
+}
+.thumb span { 
+	position:absolute;
+	visibility:hidden;
+}
+.thumb:hover, .thumb:hover span { 
+	visibility:visible;
+	top:0; left:500px; 
+}
+
+
 
 @media only screen and (min-width: 25em) {
 	html{
