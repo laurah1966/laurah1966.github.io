@@ -70,14 +70,7 @@ figure {
 	margin:5px;
 	float:left;
 }
-.thumb span { 
-	position:absolute;
-	visibility:hidden;
-}
-.thumb:hover, .thumb:hover span { 
-	visibility:visible;
-	top:0; left:500px; 
-}
+
 
 
 

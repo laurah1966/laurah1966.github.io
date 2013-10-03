@@ -1,16 +1,6 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Laura Harvey`s Porfolio Page</title>
-	<link rel="stylesheet" href="css/general.css">
-	<meta name="handheldfriendly" content="true">
-	<meta name="mobileoptimized" content="240">
-	<meta name="viewport" content="width=device-width>"
-	<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<article>
+---
+layout: default
+---
 			<figure>
 			<img src="images/face.jpg" alt="" class="flex-img">
 			</figure>
@@ -18,15 +8,11 @@
 	<div class="characteristics">		
 	<p class="intro"><div id="thumbwrap">
 	
-	<a class="thumb"><img src="images/bullicon.png"><span><img src="images/bullbig.png"></span></a>
-	<a class="thumb"><img src="images/tswifticon.png"><span><img src="images/tswiftbig.png"></span></a>
-	<a class="thumb"><img src="images/bronsonicon.png"><span><img src="images/bronsonbig.png"></span></a>
-	<a class="thumb"><img src="images/censorshipicon.png"><span><img src="images/censorshipbig.png"></span></a>
-	<a class="thumb"><img src="images/roberticon.png"><span><img src="images/robertbig.png"></span></a>
-	<a class="thumb"><img src="images/roberticon2.png"><span><img src="images/robert2big.png"></span></a>
-	<a class="thumb"><img src="images/izzeicon.png"><span><img src="images/izziebig.png"></span></a>
-	<a class="thumb"><img src="images/izzewebicon.png"><span><img src="images/izzie2.png"></span></a>
-	<a class="thumb"><img src="images/msmarvelicon.png"><span><img src="images/msmarvelbig.png"></span></a>
+	{% for art in site.pages %}
+	{% if art.category == "art" %}
+	<a class="thumb"><span><img src="images/{{art.image}}"></span></a>
+	{% endif %}
+	{% endfor %}
 	</div>
 
 <div class="socialmedia"> <a href="https://www.facebook.com/LauraHarveyDesign?fref=ts">
@@ -38,5 +24,3 @@
 						
 
 	</article>
-</body>
-</html>
